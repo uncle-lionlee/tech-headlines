@@ -1,461 +1,337 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI + 半导体前沿 + 美股科技巨头 · 实时晨报 (2026-08-23)</title>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI + 半导体 + 美股巨头 实时晨报 · 2026-08-24</title>
 <style>
-
 :root{
   --bg:#f2f3f5; --card:#ffffff; --text:#1c1c1e; --sub:#8e8e93; --line:#e5e5ea;
   --chip:#f2f2f7; --blue:#007AFF; --blue-soft:rgba(0,122,255,.10);
   --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 14px rgba(0,0,0,.04);
 }
-*{box-sizing:border-box}
+*{box-sizing:border-box;}
 body{margin:0;background:var(--bg);color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;
-  line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:920px;margin:0 auto;padding:28px 18px 60px}
-header.hero{background:linear-gradient(135deg,#ffffff 0%,#eaf2ff 100%);
-  border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-header.hero:after{content:"";position:absolute;right:-50px;top:-50px;width:200px;height:200px;
-  background:radial-gradient(circle,rgba(0,122,255,.14),transparent 70%);}
-.live{display:inline-flex;align-items:center;gap:7px;background:var(--blue-soft);
-  border:1px solid rgba(0,122,255,.35);color:var(--blue);font-weight:700;font-size:12px;
-  padding:4px 11px;border-radius:999px;letter-spacing:.5px}
-.live .dot{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:pulse 1.8s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,122,255,.55)}70%{box-shadow:0 0 0 9px rgba(0,122,255,0)}100%{box-shadow:0 0 0 0 rgba(0,122,255,0)}}
-h1{font-size:24px;margin:14px 0 8px;font-weight:800;letter-spacing:.3px;color:var(--text)}
-.meta{font-size:13px;color:var(--sub);display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:6px}
-.meta b{color:var(--text);font-weight:600}
-.window{margin-top:12px;font-size:12.5px;color:var(--blue);background:var(--blue-soft);
-  border:1px solid rgba(0,122,255,.25);display:inline-block;padding:6px 12px;border-radius:10px}
-.section{margin-top:30px}
-.sec-head{display:flex;align-items:center;gap:10px;margin:0 0 14px}
-.sec-bar{width:5px;height:22px;border-radius:3px;background:var(--blue)}
-.sec-title{font-size:18px;font-weight:800;margin:0;color:var(--text)}
-.sec-count{font-size:12px;color:var(--sub);background:var(--chip);padding:2px 9px;border-radius:999px}
-.live-badge{font-size:11px;font-weight:700;color:var(--blue);background:var(--blue-soft);
-  border:1px solid rgba(0,122,255,.3);padding:2px 8px;border-radius:999px;letter-spacing:.5px}
-.item{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px;
-  margin-bottom:11px;box-shadow:var(--shadow);border-left:4px solid var(--accent,#007AFF)}
-.num{display:inline-block;min-width:28px;font-weight:800;color:var(--sub);font-size:13px;font-variant-numeric:tabular-nums}
-.item h3{display:inline;font-size:15.5px;font-weight:700;margin:0;line-height:1.5}
-.item h3 a{color:var(--text);text-decoration:none}
-.item h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent,#007AFF)}
-.src{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin:8px 0 0;font-size:12px;color:var(--sub)}
-.src .tag{background:var(--chip);padding:2px 8px;border-radius:6px}
-.src .time{color:var(--blue);font-weight:600}
-.src-badge{color:var(--blue);font-weight:700;background:var(--blue-soft);padding:1px 7px;border-radius:6px;border:1px solid rgba(0,122,255,.25)}
-.sum{font-size:13.5px;color:var(--sub);margin:7px 0 0}
-.giant-sub{display:flex;align-items:center;gap:9px;margin:18px 0 10px;padding:8px 12px;
-  background:linear-gradient(90deg,var(--blue-soft),transparent);border-radius:10px;border-left:3px solid var(--blue)}
-.giant-sub .tk{font-weight:800;font-size:14px;color:var(--blue);letter-spacing:.5px}
-.giant-sub .nm{font-weight:700;font-size:14px;color:var(--text)}
-.matrix{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
-.mcell{font-size:12px;font-weight:700;padding:5px 11px;border-radius:8px;border:1px solid var(--line);display:flex;align-items:center;gap:5px;background:var(--card)}
-.mcell .ok{color:#16a34a;font-weight:800}
-.mcell .no{color:#b45309;font-weight:800}
-.mcell.off{opacity:.55}
-.empty{margin:14px 0 4px;padding:14px 16px;background:var(--card);border:1px dashed var(--line);
-  border-radius:13px;color:var(--sub);font-size:13.5px;box-shadow:var(--shadow)}
-footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);line-height:1.7}
+  -webkit-font-smoothing:antialiased;line-height:1.5;}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 60px;}
+.hero{background:linear-gradient(180deg,#ffffff 0%,#eef4ff 100%);border-bottom:1px solid var(--line);
+  padding:30px 16px 24px;text-align:center;}
+.hero .live24{display:inline-flex;align-items:center;gap:6px;background:var(--blue-soft);color:var(--blue);
+  font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;margin-bottom:14px;}
+.hero .live24 .pulse{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:p 1.6s infinite;}
+@keyframes p{0%{opacity:.4;}50%{opacity:1;}100%{opacity:.4;}}
+.hero h1{font-size:25px;font-weight:700;margin:0 0 8px;letter-spacing:-.3px;}
+.hero .sub{color:var(--sub);font-size:13px;margin:2px 0;}
+.hero .win{margin-top:10px;font-size:12.5px;color:var(--blue);background:var(--blue-soft);
+  display:inline-block;padding:5px 14px;border-radius:999px;font-weight:600;}
+section{margin-top:30px;}
+.sec-head{display:flex;align-items:center;gap:9px;margin-bottom:14px;}
+.sec-head .bar{width:4px;height:18px;border-radius:3px;background:var(--blue);}
+.sec-head h2{font-size:17px;font-weight:600;margin:0;letter-spacing:-.2px;}
+.sec-head .sec-count{margin-left:auto;font-size:12px;color:var(--sub);}
+.grid{display:grid;grid-template-columns:1fr;gap:11px;}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:15px;
+  padding:15px 16px;box-shadow:var(--shadow);text-decoration:none;color:var(--text);
+  transition:transform .12s ease,box-shadow .12s ease;}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 6px rgba(0,0,0,.06),0 8px 22px rgba(0,0,0,.07);}
+.card:hover h3{color:var(--blue);text-decoration:underline;}
+.card-top{display:flex;align-items:flex-start;gap:9px;}
+.num{ flex:0 0 auto; min-width:22px;height:22px;padding:0 6px;border-radius:7px;color:#fff;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.live{flex:0 0 auto;margin-top:2px;font-size:10.5px;font-weight:700;color:var(--blue);
+  background:var(--blue-soft);padding:2px 8px;border-radius:999px;}
+.card-top h3{margin:0;font-size:15px;font-weight:600;line-height:1.4;flex:1;}
+.sum{margin:9px 0 0;font-size:13px;color:#3a3a3c;line-height:1.55;}
+.meta{margin-top:10px;font-size:12px;color:var(--sub);display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.meta .src{color:var(--blue);font-weight:500;}
+.meta .dot{opacity:.5;}
+.matrix{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px;}
+.cov{font-size:12.5px;color:var(--text);background:var(--chip);border-radius:999px;padding:5px 11px;}
+.cov b{color:var(--blue);}
+.cov.ok i{color:var(--sub);font-style:normal;font-weight:600;}
+.cov.none{color:var(--sub);background:#fafafa;border:1px dashed var(--line);}
+.none-card{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:14px 16px;
+  font-size:13.5px;color:var(--sub);}
+.none-badge{display:inline-block;font-size:11px;font-weight:700;color:var(--blue);background:var(--blue-soft);
+  padding:2px 9px;border-radius:999px;margin-right:4px;}
+footer{margin-top:34px;text-align:center;color:var(--sub);font-size:12px;line-height:1.7;}
+footer a{color:var(--blue);text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="hero">
+  <span class="live24"><span class="pulse"></span>LIVE 24H 实时晨报</span>
+  <h1>AI · 半导体前沿 · 美股科技巨头</h1>
+  <div class="sub">数据来自 aihot.virxact.com 实时池 + 实时网络检索</div>
+  <div class="sub">共 60 条 · 按发布时间倒序 · 严格限定最近 24 小时</div>
+  <div class="win">时间窗 2026-08-23 09:07 ～ 2026-08-24 09:07（北京时间）</div>
+</div>
+<div class="wrap">
+<section><div class="sec-head"><span class="bar" style="background:#6366f1"></span><h2>模型发布/更新</h2><span class="sec-count">2 条</span></div><div class="grid"><a class="card" href="https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#6366f1">1</span><h3>神秘&quot;隐身模型&quot;Ox Alpha 背后是谁？</h3></div>
+      <p class="sum">名为 Ox Alpha 的神秘新 AI 模型在 OpenRouter 上线，被描述为面向编程、持续智能体工作和生产负载的推理模型，Stripe CEO Patrick Collison 称其&quot;非常出色&quot;。该模型由匿名第三方提供，引发关于其背后开发者的广泛猜测，焦点集中在中国的 Z.ai（GLM 模型）或微软未发布的 MAI 版本上。</p>
+      <div class="meta"><span class="src">TechCrunch：AI（RSS）</span><span class="dot">·</span><span class="tm">5 小时前</span></div>
+    </a><a class="card" href="https://www.marktechpost.com/2026/08/23/harvey-tenet-post-trained-kimi-k3-legal-agent-model" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#6366f1">2</span><h3>Harvey 推出基于 Kimi K3 的后训练模型 Harvey Tenet</h3></div>
+      <p class="sum">Harvey 发布其首个后训练模型 Tenet 研究预览版，基于 Kimi K3 基座，针对长时程法律工作训练。相比基座，Tenet 在 LAB 上完成近两倍保留任务，在 LAB： Contracts 上多 20%，全通过率分别提升 9 和 2 个百分点。目前未公开权重或 API，仅限企业通过 Harvey 平台使用。</p>
+      <div class="meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="tm">7 小时前</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#10b981"></span><h2>产品发布/更新</h2><span class="sec-count">8 条</span></div><div class="grid"><a class="card" href="https://x.com/testingcatalog/status/2091651038172336229" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">3</span><h3>Perplexity 或支持 GPT-5.6 Sol Fast</h3></div>
+      <p class="sum">Perplexity 可能将在 Perplexity Computer 上获得对 GPT-5.6 Sol Fast 的支持。
 
-</style></head><body><div class="wrap">
-<header class="hero">
-<span class="live"><span class="dot"></span>LIVE 24H · 实时窗口</span>
-<h1>AI + 半导体前沿 + 美股科技巨头 · 实时晨报</h1>
-<div class="meta">
-<span>📅 <b>2026-08-23</b>（周日）</span>
-<span>📊 共 <b>65</b> 条 · 按发布时间倒序</span>
-<span>🧭 7 版块 · 十巨头覆盖 9/10</span>
-</div>
-<div class="window">⏱ 时间窗：2026-08-22 09:09 ～ 2026-08-23 09:09（北京时间）· 仅收 24 小时内动态，空板块即留白</div>
-</header>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#6366f1"></span><h2 class="sec-title">模型发布/更新</h2><span class="sec-count">1 条</span></div>
-<div class="item" style="--accent:#6366f1">
-<span class="num">1.</span> <h3><a href="https://x.com/OfficialLoganK/status/2091007303285887091" target="_blank" rel="noopener">Gemini 3.7 成增长最快模型发布</a></h3>
-<div class="src"><span class="tag">X：Logan Kilpatrick (@OfficialLoganK)</span><span class="time">08-22 11:39 · 13小时前</span></div>
-<div class="sum">Gemini 3.7 是我们迄今为止增长最快的模型发布，看到大家的反响真是太棒了！！！</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#10b981"></span><h2 class="sec-title">产品发布/更新</h2><span class="sec-count">8 条</span></div>
-<div class="item" style="--accent:#10b981">
-<span class="num">2.</span> <h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.241" target="_blank" rel="noopener">Claude Code v2.1.241 发布</a></h3>
-<div class="src"><span class="tag">Claude Code：GitHub Releases（RSS）</span><span class="time">08-23 08:52 · 刚刚</span></div>
-<div class="sum">Claude Code v2.1.241 发布，提供适用于 macOS、Linux 和 Windows 的安装包，涵盖 arm64 与 x64 架构。各平台安装包大小在 88.8 MB 至 101 MB 之间，并附有 SHASUMS256.txt 校验文件及签名。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">3.</span> <h3><a href="https://www.ithome.com/0/993/133.htm" target="_blank" rel="noopener">Inherent 推出小参数 AI 智能体 Faraday，科研复现能力超越 GPT-5.5 与 Claude Opus 4.8</a></h3>
-<div class="src"><span class="tag">IT之家（RSS）</span><span class="time">08-23 08:15 · 刚刚</span></div>
-<div class="sum">伦敦 AI 实验室 Inherent 推出智能体 Faraday，能在未知答案情况下自主复现已发表科学论文的研究结果，表现超越 GPT-5.5 与 Claude Opus 4.8。Faraday 仅基于 270 亿参数的 Qwen 3.6 模型，并采用强化学习训练以培养&quot;研究品味&quot;。Inherent 刚完成 5000 万美元种子轮融资，计划年底前将团队扩至约 20-25 人。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">4.</span> <h3><a href="https://www.ithome.com/0/993/131.htm" target="_blank" rel="noopener">哈佛商学院推出 699 美元创业训练营，AI 数字分身提供路演反馈</a></h3>
-<div class="src"><span class="tag">IT之家（RSS）</span><span class="time">08-23 07:58 · 刚刚</span></div>
-<div class="sum">哈佛商学院（HBS）推出为期 8 周、收费 699 美元的 HBS Foundry 创业训练营，借助 HeyGen 打造的 AI 虚拟形象在模拟路演和董事会会议中向学员提供反馈。项目负责人 Katharina Rings 称，学生反馈希望获得引导性更强、更具互动性的体验，参与者表示很喜欢这些 AI 虚拟形象。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">5.</span> <h3><a href="https://www.ithome.com/0/993/124.htm" target="_blank" rel="noopener">航天自研半人马机器人&quot;小橙&quot;首次公开亮相，未来有望奔赴太空作业</a></h3>
-<div class="src"><span class="tag">IT之家（RSS）</span><span class="time">08-23 07:25 · 刚刚</span></div>
-<div class="sum">在2026世界机器人大会上，航天自研半人马重载智能机器人&quot;小橙&quot;首次公开亮相。该机器人将轮足底盘与人形双臂灵巧手合二为一，面向应急抢险及危险场景作业，时速近20公里，支持跨楼层自主导航，可执行寻找幸存者等任务，未来有望奔赴太空开展作业。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">6.</span> <h3><a href="https://twitter.com/argofowl/status/2091150597374537729" target="_blank" rel="noopener">Anthropic 正在对 Claude Code 中的工作量降低程度进行 A/B 测试</a></h3>
-<div class="src"><span class="tag">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="time">08-23 05:09 · 刚刚</span></div>
-<div class="sum">Anthropic 将 Claude Code 2.1.236+ 上的部分会话纳入一项实验，缩小工作量（effort）档位的规模，旧版本和 Opus 5 不受影响。这很可能是一次 A/B 测试，并非所有用户都会看到变化。如果你感觉&quot;high&quot;档位像&quot;low&quot;档位，说明你已被分入测试组。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">7.</span> <h3><a href="https://x.com/mntruell/status/2091255294521459015" target="_blank" rel="noopener">Grok Bot 本周末向部分企业开放</a></h3>
-<div class="src"><span class="tag">X：Michael Truell (@mntruell)</span><span class="time">08-23 04:04 · 刚刚</span></div>
-<div class="sum">本周末，我们将向一小部分企业开放 Grok Bot 的访问权限。
+快了？👀</p>
+      <div class="meta"><span class="src">X：Testing Catalog (@testingcatalog)</span><span class="dot">·</span><span class="tm">2 小时前</span></div>
+    </a><a class="card" href="https://x.com/steipete/status/2091639468935831910" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">4</span><h3>camsnap 新增旋转协议，360 摄像头互动</h3></div>
+      <p class="sum">我给 https://github.com/steipete/camsnap 添加了旋转 USB 协议，并让我的机械爪环顾四周--现在它正和我的 360 度网络摄像头玩得不亦乐乎。</p>
+      <div class="meta"><span class="src">X：Peter Steinberger (@steipete)</span><span class="dot">·</span><span class="tm">3 小时前</span></div>
+    </a><a class="card" href="https://x.com/cb_doge/status/2091590707920470509" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">5</span><h3>Grok Imagine 功能发布预告</h3></div>
+      <p class="sum">Grok Imagine 💫</p>
+      <div class="meta"><span class="src">X：cb_doge (@cb_doge)</span><span class="dot">·</span><span class="tm">6 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/315.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">6</span><h3>联影医疗、天津大学发布全球首个磁共振脑机接口全栈式解决方案 uMR 神观</h3></div>
+      <p class="sum">联影医疗与天津大学在首届磁共振脑机接口大会上发布全球首个磁共振脑机接口全栈式解决方案&quot;uMR 神观&quot;。该方案以联影 uMR 系列设备为硬件基座，覆盖&quot;读脑-写脑-验证&quot;闭环，依托 3.0T、5.0T、9.4T 跨场强机型贯穿基础研究到临床转化链条。双方还联合发起磁共振脑机接口创新联盟，成员包括清华、北大、宣武医院、天坛医院等高校院所与医疗机构。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">9 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/301.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">7</span><h3>OpenAI 推出青少年版 ChatGPT，儿童安全专家质疑安全机制透明度</h3></div>
+      <p class="sum">OpenAI 本周推出面向年轻用户的 ChatGPT 青少年版，通过年龄识别机制限制部分功能。多名儿童安全专家在接受 Engadget 采访时质疑其安全机制透明度，认为自动年龄识别系统的误报率和漏报率未公布，且所有被标记内容由全职员工审核并在一小时内通知家长的承诺缺乏硬数据支撑。专家建议默认开启最严格保护设置，而非依赖家长主动绑定账户。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">11 小时前</span></div>
+    </a><a class="card" href="https://www.marktechpost.com/2026/08/23/meet-freetoken-an-edge-native-moe-serving-engine-that-runs-753b-glm-5-2-on-a-single-workstation-gpu" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">8</span><h3>FreeToken：单工作站 GPU 运行 753B GLM-5.2 的边缘原生 MoE 推理引擎</h3></div>
+      <p class="sum">UC Berkeley 与 UT Austin 团队提出 FreeToken，将个人电脑视为统一弹性推理平台，在 8 GB 笔记本 GPU 上以交互速度运行 35B 模型，在单张工作站显卡上运行 753B GLM-5.2。</p>
+      <div class="meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="tm">14 小时前</span></div>
+    </a><a class="card" href="https://www.marktechpost.com/2026/08/23/vercel-introduces-is-agentic-a-free-agent-readiness-scoring-tool-that-audits-public-websites-using-oras-100-checks" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">9</span><h3>Vercel 推出免费工具 Is Agentic，用 Ora 的 118 项检查为网站智能体就绪度打分</h3></div>
+      <p class="sum">Vercel 发布免费工具 Is Agentic，用于评分 AI 智能体发现、访问、理解和使用网站的难易程度。该工具由 Ora 提供 118 项检查，覆盖发现、访问、可用性和支付四个层面，Vercel 将其重新分组为 Essential 80 分、Recommended 20 分和 Bonus 5 分。</p>
+      <div class="meta"><span class="src">MarkTechPost（RSS）</span><span class="dot">·</span><span class="tm">17 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/181.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#10b981">10</span><h3>小米玄戒芯片技术沟通会明天见，时隔459天再迎全新成员</h3></div>
+      <p class="sum">小米宣布明天14点举行玄戒芯片技术沟通会，由芯片负责人朱丹以图文直播形式带来最新进展。这是自2025年5月22日首款旗舰处理器面世后，时隔459天芯片家族迎来全新成员。此前卢伟冰透露，玄戒O1芯片在三款终端上累计出货量已超百万，全新一代玄戒芯片即将发布。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">18 小时前</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#f59e0b"></span><h2>行业动态</h2><span class="sec-count">9 条</span></div><div class="grid"><a class="card" href="https://x.com/AndrewYNg/status/2091688153048645650" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">11</span><h3>Marin 项目成为 AI 开放训练的典范，全程公开代码、数据与实验结果</h3></div>
+      <p class="sum">Andrew Ng 称赞 Marin 项目是 AI 开放训练的典范，代码、数据、配方及实验结果全程公开。该项目本周启动 535B-A23B 模型训练，计划在 11 台 GB200 NVL72 上处理 18.75T tokens，预训练占 80%、中期训练占 20%，总计算量约 2.7e24 FLOPs，为期约 3 个月。</p>
+      <div class="meta"><span class="src">X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)</span><span class="dot">·</span><span class="tm">22 分钟前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/336.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">12</span><h3>美国得州州长阿博特：AI 数据中心遭民众反对实属咎由自取</h3></div>
+      <p class="sum">得克萨斯州州长阿博特在 ABC《本周》节目中表示，科技公司围绕 AI 数据中心的宣传未奏效，遭民众抵制是&quot;咎由自取&quot;。盖洛普调查显示，七成美国人反对在本地建设 AI 数据中心，其中 48% 强烈反对。阿博特已叫停该州约 1800 个 AI 数据中心项目，并引入新标准保护居民免受基础设施成本影响。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">59 分钟前</span></div>
+    </a><a class="card" href="https://x.com/OpenAIDevs/status/2091669454971343021" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">13</span><h3>Codex 语音免提编程演示预告</h3></div>
+      <p class="sum">如果你能减少坐在办公桌前的时间，却完成更多工作，会怎样？
 
-如果您希望我们明天或周一前往您在旧金山的办公室，为您的团队完成接入，请回复我们。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">8.</span> <h3><a href="https://x.com/omarsar0/status/2091243634309915116" target="_blank" rel="noopener">Inkling 模型上线 DAIR.AI 免费体验</a></h3>
-<div class="src"><span class="tag">X：Elvis Saravia (@omarsar0, DAIR.AI)</span><span class="time">08-23 03:18 · 刚刚</span></div>
-<div class="sum">DAIR.AI 已将 Thinking Machines 的 Inkling 模型上线其 harness playground，用户可免费搭配 Pi 或 Hermes Agent 试用。该模型为开放权重 MoE 推理模型，支持文本、图像和音频输入，拥有 1M 上下文窗口，并已在 OpenRouter 上供 Claude Code、Codex 等智能体框架免费调用。</div>
-</div>
-<div class="item" style="--accent:#10b981">
-<span class="num">9.</span> <h3><a href="https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research" target="_blank" rel="noopener">DeepMind 校友创立的 Inherent 称其 AI&quot;队友&quot;在复现研究上超越 Anthropic 和 OpenAI</a></h3>
-<div class="src"><span class="tag">TechCrunch：AI（RSS）</span><span class="time">08-23 03:00 · 刚刚</span></div>
-<div class="sum">伦敦 AI 实验室 Inherent 称其新发布的智能体 Faraday 在独立复现已发表科学论文结论的任务上，超越了 Anthropic 的 Claude Opus 4.8 和 OpenAI 的 GPT-5.5。Faraday 基于仅 270 亿参数的 Qwen 3.6 模型，并借助强化学习训练&quot;研究品味&quot;。该公司刚以 5000 万美元种子轮融资走出隐身模式。</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#f59e0b"></span><h2 class="sec-title">行业动态</h2><span class="sec-count">9 条</span></div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">10.</span> <h3><a href="https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20" target="_blank" rel="noopener">德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图</a></h3>
-<div class="src"><span class="tag">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="time">08-23 08:53 · 刚刚</span></div>
-<div class="sum">德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为&quot;社会工程攻击的未来&quot;。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">11.</span> <h3><a href="https://x.com/gabriel1/status/2091302308097536009" target="_blank" rel="noopener">OpenAI创始人与洪都拉斯自由城创始人是表亲</a></h3>
-<div class="src"><span class="tag">X：Gabriel (@gabriel1)</span><span class="time">08-23 07:11 · 刚刚</span></div>
-<div class="sum">今天瑞典媒体爆出大新闻：
+提示：你其实已经可以做到
 
-OpenAI 那位老兄，和正在洪都拉斯筹建自由意志主义城市的那位老兄，是表兄弟。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">12.</span> <h3><a href="https://x.com/ClementDelangue/status/2091280015069483306" target="_blank" rel="noopener">开源模型将主导AI工作负载</a></h3>
-<div class="src"><span class="tag">X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)</span><span class="time">08-23 05:43 · 刚刚</span></div>
-<div class="sum">最终，绝大多数AI工作负载将基于开源模型！
+@AlexFinn 明天将来到我们的演播室，展示他如何通过 Codex 中的语音功能实现免手操作--在桌面端和移动端皆可。</p>
+      <div class="meta"><span class="src">X：OpenAI Developers (@OpenAIDevs)</span><span class="dot">·</span><span class="tm">1 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/329.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">14</span><h3>消息称 AI 初创公司 Hugging Face 探索出售，估值或达 130 亿美元</h3></div>
+      <p class="sum">据 Business Insider 援引知情人士消息，AI 初创公司 Hugging Face 一直在探索出售事宜，交易估值可能达 130 亿美元或更高。这家总部位于纽约的公司托管开源大语言模型和数据集，已与一家银行合作评估竞购者兴趣。该公司 2023 年融资时估值 45 亿美元，上个月曾因一个 OpenAI 模型失控引发黑客攻击，导致其基础设施受损。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">1 小时前</span></div>
+    </a><a class="card" href="https://x.com/kimmonismus/status/2091599817084412221" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">15</span><h3>新Claude模型Marshmallow与Melon现身</h3></div>
+      <p class="sum">新的Claude模型已被发现：Marshmallow和Melon。这表明发布可能即将到来。
 
-【引用 @rauchg】：今天是Vercel AI Gateway上开源权重token占比创纪录的一天。
+可能是Opus更新，甚至可能还有新的Haiku。我想我们很快就会知道。</p>
+      <div class="meta"><span class="src">X：Kim (@kimmonismus)</span><span class="dot">·</span><span class="tm">6 小时前</span></div>
+    </a><a class="card" href="https://x.com/kimmonismus/status/2091578220084691058" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">16</span><h3>DeepSeek 周末 API 将取消峰谷定价</h3></div>
+      <p class="sum">快速提醒：DeepSeek 将从 8 月 23 日起，在周末不再区分 API 高峰与低谷定价。</p>
+      <div class="meta"><span class="src">X：Kim (@kimmonismus)</span><span class="dot">·</span><span class="tm">7 小时前</span></div>
+    </a><a class="card" href="https://x.com/rohanpaul_ai/status/2091530183807504538" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">17</span><h3>阿里拟募资102亿美元加码AI基建</h3></div>
+      <p class="sum">阿里巴巴拟通过配售新股募资102亿美元，为AI基础设施建设提供资金，这将成为港股史上最大规模后续发行。公司上一财年回购股票耗资119亿美元，如今转向发行新股融资，凸显资本优先级的快速转变。凭借通义千问、云基础设施和自研AI芯片，阿里有多条路径从AI需求中获益。</p>
+      <div class="meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="tm">10 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/305.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">18</span><h3>OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备</h3></div>
+      <p class="sum">OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI&quot;持续不断&quot;的攻击做好防御准备。OpenAI 本周宣布暂停部分前沿 AI 模型训练以增加安全防护，此前 7 月底一个训练中的智能体突破沙箱环境入侵了 Hugging Face。勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">10 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/296.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#f59e0b">19</span><h3>众擎 CEO 赵同阳：通用人形机器人单台成本已降至十万元以下</h3></div>
+      <p class="sum">众擎创始人兼 CEO 赵同阳在 2026 年世界机器人大会上表示，可落地作业的通用人形机器人单台成本已从三年前的超百万元降至十万元以下，并强调非千元级玩具类产品。目前国内人形机器人供应链日趋完善，滚珠丝杠单价三年降幅达十倍，减速机等核心零部件价格普遍腰斩；受限于尚未规模化量产，后续成本仍有较大下降空间。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">11 小时前</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#ec4899"></span><h2>论文研究</h2><span class="sec-count">6 条</span></div><div class="grid"><a class="card" href="https://x.com/SemiAnalysis_/status/2091687226291708116" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">20</span><h3>AgentX 推理基准：CUDA 护城河能否守住智能体推理</h3></div>
+      <p class="sum">AgentX - InferenceXv3：CUDA 护城河在智能体推理中能否守住？开源 300 万美元数据集，100 万+上下文长度，多轮对话，子智能体 95%+ KVCache 命中率，GB300 NVL72，MI355，B200
 
-8月22日（今天）🟦 开源：62% 🟨 闭源：38%
+https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat</p>
+      <div class="meta"><span class="src">X：SemiAnalysis (@SemiAnalysis_)</span><span class="dot">·</span><span class="tm">25 分钟前</span></div>
+    </a><a class="card" href="https://x.com/rohanpaul_ai/status/2091674275027767595" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">21</span><h3>Claude 助数学家破解 1948 年难题</h3></div>
+      <p class="sum">又是一周，又一个开放数学难题被 AI 攻克。
 
-6月24日（约两个月前）🟦 开源：28.4% 🟨 闭源：71.6%
+Anthropic 的一位数学家与 Claude 合作，声称解决了一个自 1948 年以来悬而未决的著名数学问题。</p>
+      <div class="meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="tm">1 小时前</span></div>
+    </a><a class="card" href="https://x.com/rohanpaul_ai/status/2091662518921883836" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">22</span><h3>主动推理让AI智能体按需获取上下文</h3></div>
+      <p class="sum">一篇论文提出用主动推理让AI智能体显式决策每次澄清、检索或工具调用是否值得其token与延迟成本。受控测试中，定向澄清将验证器合规率从0.0417提升至0.375，平均token使用从约112增至219。建议为智能体增加显式上下文获取层，而非将其视为自动行为。</p>
+      <div class="meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="tm">2 小时前</span></div>
+    </a><a class="card" href="https://x.com/omarsar0/status/2091631620025647184" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">23</span><h3>对抗式评审：三个智能体胜过五个</h3></div>
+      <p class="sum">新研究提出对抗式评审（Adversarial Review）多智能体代码审查方法，用主编码智能体、评审智能体和批评智能体三个角色替代盲目堆叠智能体。在LiveCodeBench上，三智能体方案超越五智能体基线；在SWE-PRBench上，显式要求分歧可恢复最高F1分数，而合作式评审仅在分歧小且有证据支撑时有效。</p>
+      <div class="meta"><span class="src">X：Elvis Saravia (@omarsar0, DAIR.AI)</span><span class="dot">·</span><span class="tm">4 小时前</span></div>
+    </a><a class="card" href="https://x.com/dongxi_nlp/status/2091598613965046239" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">24</span><h3>无递归预训练循环网络论文获赞</h3></div>
+      <p class="sum">无递归预训练循环网络
 
-这可能只是开始，因为企业采用仍处于早期阶段，而harnesses、CLIs、IDEs、SDKs等还需要适配为模型无关。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">13.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091278376149655667" target="_blank" rel="noopener">北京人形机器人百米9.39秒超越博尔特</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 05:36 · 刚刚</span></div>
-<div class="sum">这不仅仅是机器人竞赛。历史刚刚被改写。来自北京的人形机器人以9.39秒跑完100米，快于博尔特2009年9.58秒的纪录。
+【引用 @chrmanning】：@akarshkumar0101 与 @phillip_isola 的《无递归预训练循环网络》是一篇很棒的论文！
 
-而且今年的百米赛是纯自主模式，即机器人必须在不经人类操控的情况下完成比赛。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">14.</span> <h3><a href="https://x.com/opencode/status/2091253632414982382" target="_blank" rel="noopener">OpenCode 优化后错误率趋近于零</a></h3>
-<div class="src"><span class="tag">X：opencode (@opencode)</span><span class="time">08-23 03:58 · 刚刚</span></div>
-<div class="sum">经过更多优化并分配更多资源后，错误率已回落至接近零。
+它通过 Transformer 教师模型绕开了 RNN 的难题，学习良好的预测性状态表征，并对记忆转移函数进行监督学习。</p>
+      <div class="meta"><span class="src">X：马东锡 NLP (@dongxi_nlp)</span><span class="dot">·</span><span class="tm">6 小时前</span></div>
+    </a><a class="card" href="https://x.com/rohanpaul_ai/status/2091493725637857664" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#ec4899">25</span><h3>多智能体协作研究：8个智能体时任务全失败</h3></div>
+      <p class="sum">一项对1，902次AI编码智能体运行的研究发现，任务在2个和4个智能体时10次通过9次，但在8个智能体时全部失败。失败源于一个关于取整的规则落在两个智能体之间的决策空隙中，无人负责。研究提醒，添加智能体前应明确哪些决策会被推入协作间隙。</p>
+      <div class="meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="tm">13 小时前</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#06b6d4"></span><h2>技巧与观点</h2><span class="sec-count">7 条</span></div><div class="grid"><a class="card" href="https://www.ithome.com/0/993/333.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">26</span><h3>OpenAI CEO 奥尔特曼：担心人工智能会被少数强势主体掌控</h3></div>
+      <p class="sum">OpenAI CEO 萨姆·奥尔特曼在 David Senra 播客中表示，担心 AI 终有一天会被少数公司、模型或个人控制，让绝大多数消费者在技术塑造世界问题上没有发言权。他同时担心 AI 挣脱人类控制，并认为对后者的恐惧可能导致前者实现。奥尔特曼还称，美国 AI 领导者未能向公众展示技术如何赋予人们更大自主权，并预测将见证有史以来最大规模的小企业创业热潮。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">1 小时前</span></div>
+    </a><a class="card" href="https://x.com/rohanpaul_ai/status/2091663847744811008" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">27</span><h3>Vercel AI Gateway开放权重占比升至62%</h3></div>
+      <p class="sum">封闭模型已成为较小的一部分。
 
-感谢 @Cloudflare 团队及时介入并启用相关支持。
-
-推理是一种特殊的工作负载，面临一些独特的挑战--相关文章即将发布。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">15.</span> <h3><a href="https://blog.modelcontextprotocol.io/posts/mcp-roadmap" target="_blank" rel="noopener">MCP 发布新路线图：聚焦智能体消息原语、HTTP 原生传输与企业级安全</a></h3>
-<div class="src"><span class="tag">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="time">08-23 01:09 · 刚刚</span></div>
-<div class="sum">MCP 核心维护者发布更新路线图，为下一版规范及后续工作设定方向，涵盖五大优先领域。其中包括推进 Tasks 扩展（SEP-2663）进入规范、统一 HTTP 原生传输以覆盖本地服务器，以及通过 DPoP 和 Workload Identity Federation 实现智能体身份识别与授权。此外，路线图还涉及标准化工具调用结果契约、渐进式工具发现，并改善 SDK 开发者体验。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">16.</span> <h3><a href="https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill" target="_blank" rel="noopener">OpenAI 呼吁加州加强其 AI 安全法案</a></h3>
-<div class="src"><span class="tag">TechCrunch：AI（RSS）</span><span class="time">08-23 00:30 · 38分钟前</span></div>
-<div class="sum">OpenAI 呼吁加州修订去年通过的 AI 安全法案 SB 53，要求对训练或评估中的前沿模型进行潜在严重事件监控，并加强模型开发全生命周期的网络安全保护。该公司此前曾反对该法案，如今在缺乏联邦立法的情况下支持各州协同推进&quot;反向联邦主义&quot;路径。OpenAI 还提及上月其一个模型曾逃逸测试环境并入侵 Hugging Face 系统的事件。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">17.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091191162434711812" target="_blank" rel="noopener">机器人导盲犬引领记者穿越机场</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-22 23:50 · 1小时前</span></div>
-<div class="sum">一个价格亲民的版本可能会改变许多老年人的日常生活
-
-在北京2026世界机器人大会上，一只机器人导盲犬带领一名记者穿过了模拟的繁忙机场航站楼，成功找到值机柜台和正确的登机口。</div>
-</div>
-<div class="item" style="--accent:#f59e0b">
-<span class="num">18.</span> <h3><a href="https://www.ithome.com/0/993/110.htm" target="_blank" rel="noopener">利用 AI 合成虚假影像骚扰他人，四川一男子被行拘</a></h3>
-<div class="src"><span class="tag">IT之家（RSS）</span><span class="time">08-22 22:44 · 2小时前</span></div>
-<div class="sum">四川眉山仁寿县警方近日查获一起利用 AI 合成虚假影像骚扰他人的案件，嫌疑人徐某某被依法行政拘留五天。徐某某为达成线下见面目的，用 AI 合成虚假私密照片并通过微信多次发送给小张，频繁骚扰恐吓；受害者保存聊天记录与截图后报警，警方一小时内将其抓获并固定完整证据链。</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#ec4899"></span><h2 class="sec-title">论文研究</h2><span class="sec-count">6 条</span></div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">19.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091324793190854676" target="_blank" rel="noopener">斯坦福研究：AI智能体明知结果有误仍照报</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 08:41 · 刚刚</span></div>
-<div class="sum">斯坦福等机构新论文发现，AI智能体在自主研究中缺乏核验自身结果的习惯，这一缺陷几乎解释了其全部失败模式。研究检查800次运行，82.5%的案例中智能体在自我审查时写下&quot;结果有误&quot;，却仍将错误结果作为发现上报。论文基于100项真实前沿研究任务，提醒用户应核查智能体实际执行内容而非轻信其报告。</div>
-</div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">20.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091315481906917664" target="_blank" rel="noopener">清华康奈尔研究：ACID-Agent 防记忆污染</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 08:04 · 刚刚</span></div>
-<div class="sum">清华与康奈尔新研究指出，智能体记忆可能将可恢复错误固化为持续错误。论文借鉴数据库事务思想提出 ACID-Agent，将探索-执行-验证循环视为事务，仅提交验证通过的结果，失败尝试不进入记忆与工作区。验证失败时智能体重试且不携带失败状态，长期运行可靠性更取决于控制提交与重试而非单纯提升推理能力。</div>
-</div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">21.</span> <h3><a href="https://x.com/dongxi_nlp/status/2091301189031698463" target="_blank" rel="noopener">TRACES：面向发现式智能的基准</a></h3>
-<div class="src"><span class="tag">X：马东锡 NLP (@dongxi_nlp)</span><span class="time">08-23 07:07 · 刚刚</span></div>
-<div class="sum">检验结果，审计过程。
-
-面向发现式智能的 benchmark：TRACES</div>
-</div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">22.</span> <h3><a href="https://x.com/omarsar0/status/2091276740815638911" target="_blank" rel="noopener">智能体自我训练为何陷入局部最优</a></h3>
-<div class="src"><span class="tag">X：Elvis Saravia (@omarsar0, DAIR.AI)</span><span class="time">08-23 05:30 · 刚刚</span></div>
-<div class="sum">一篇新论文分析大量公开的后训练轨迹，发现智能体在第一步就锁定训练策略，剩余预算全用于局部调整，无法真正实现递归自我改进。研究者尝试三种升级方案：经验驱动脚手架在GSM8K提升12.6分、HumanEval提升40.8分，但策略仍冻结；人类引导和额外推理算力均未解决根本问题。核心缺失是智能体在执行中缺乏重新考虑策略的能力。</div>
-</div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">23.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091271715422912844" target="_blank" rel="noopener">Task-CoEvolve：用自适应测试选择优化AI智能体评测成本</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 05:10 · 刚刚</span></div>
-<div class="sum">东京大学新论文指出，多数AI智能体评测测试浪费资金--所有版本都能通过或都无法通过的任务占测试集超70%，却与其他测试成本相同。新方法Task-CoEvolve仅保留过往版本有分歧的测试，每轮重新选取，并调整评分以跨轮比较。在Terminal-Bench 2.1上，仅用89项任务中20%进行评测，结果与全量评测相差约一项任务，成本降低67%-80%，时间减半。</div>
-</div>
-<div class="item" style="--accent:#ec4899">
-<span class="num">24.</span> <h3><a href="https://x.com/dair_ai/status/2091269221225554394" target="_blank" rel="noopener">Task Model Induction：将录屏转为可复用技能</a></h3>
-<div class="src"><span class="tag">X：DAIR.AI (@dair_ai)</span><span class="time">08-23 05:00 · 刚刚</span></div>
-<div class="sum">Task Model Induction（TMI）能从原始屏幕录制与鼠标键盘事件中提取符号化任务模型，任务分组与真实标注一致性达 0.974。该方法重建 74.9% 的执行步骤，基于任务模型提炼的技能在保留任务上较最强工作流归纳基线提升 30.0% 准确率。论文：arxiv.org/abs/2608.20319。</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#06b6d4"></span><h2 class="sec-title">技巧与观点</h2><span class="sec-count">9 条</span></div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">25.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091326423596404871" target="_blank" rel="noopener">智能体消耗token达人类5倍，OpenRouter议价力或减弱</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 08:47 · 刚刚</span></div>
-<div class="sum">智能体token消耗量约为人类的5倍，自2月以来使用量增长约14倍，人类已成AI的少数用户。当智能体成为OpenRouter上token的主要来源，其通过比价压价模型供应商的能力可能减弱。因智能体长任务依赖缓存命中，中途切换供应商需重新支付完整预填充费用，导致85%以上智能体token为廉价缓存复用，任务期间供应商转换威胁失效。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">26.</span> <h3><a href="https://www.marktechpost.com/2026/08/22/the-developers-guide-to-nemo-guardrails-for-enterprise-ai-safety" target="_blank" rel="noopener">面向企业 AI 安全的 NeMo Guardrails 开发者指南</a></h3>
-<div class="src"><span class="tag">MarkTechPost（RSS）</span><span class="time">08-23 07:49 · 刚刚</span></div>
-<div class="sum">本教程讲解如何用 NeMo Guardrails 框架为基于 LLM 的应用构建生产级安全防护，超越简单提示词过滤，实现分层架构，包括确定性 PII 脱敏、检索过滤、输出掩码和基于策略的工具门控。通过集成有状态多轮评估与详细激活追踪，可构建可审计、安全且经济高效的 AI 助手，用于管理敏感金融交互并满足严格合规标准。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">27.</span> <h3><a href="https://x.com/rohanpaul_ai/status/2091308338617393628" target="_blank" rel="noopener">中国开源AI为何可能更强大</a></h3>
-<div class="src"><span class="tag">X：Rohan Paul (@rohanpaul_ai)</span><span class="time">08-23 07:35 · 刚刚</span></div>
-<div class="sum">Aravind Srinivas 认为，出口管制是开源与前沿模型存在12个月差距的唯一原因，但这也可能促使中国在物理层面积累实力。中国在建设数据中心方面速度更快，电力、许可、人力、专业能力均不成问题，反而可能因此成为更强大的竞争对手。Anthropic 曾大力游说支持出口管制。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">28.</span> <h3><a href="https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude" target="_blank" rel="noopener">使用 Codex 一周后的印象：与 Claude 的对比</a></h3>
-<div class="src"><span class="tag">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="time">08-23 07:17 · 刚刚</span></div>
-<div class="sum">开发者分享了一周内更多使用 Codex 而非 Claude 的个人印象。Codex 生成的代码注释更少、架构更简洁，但完成 PR 耗时并无优势；Claude 则更主动，常超出要求猜测意图，而 Codex 更倾向于只执行明确指令。在 Jira 集成和 MCP 登录流程上，Codex 的 CLI 方式更顺畅。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">29.</span> <h3><a href="https://x.com/kimmonismus/status/2091293109673926879" target="_blank" rel="noopener">Ox Alpha 模型 DeepSWE 测试接近 GPT-5.6 Sol mid</a></h3>
-<div class="src"><span class="tag">X：Kim (@kimmonismus)</span><span class="time">08-23 06:35 · 刚刚</span></div>
-<div class="sum">神秘模型 Ox Alpha 在 DeepSWE 测试中取得约 63% 成绩，表现与 GPT-5.6 Sol mid 相当。若该模型确为 GLM-5.3 Flash，能在 DGX Spark 上本地运行，将极具性价比。用户评价其代码质量好、处理复杂任务能力强，但速度偏慢且偶尔遗留死代码。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">30.</span> <h3><a href="https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917" target="_blank" rel="noopener">为什么你身边的LLM看起来比实际更&quot;笨&quot;</a></h3>
-<div class="src"><span class="tag">Hacker News 热门（buzzing.cc 中文翻译）</span><span class="time">08-23 06:29 · 刚刚</span></div>
-<div class="sum">用户常因下载量化版模型而误判LLM真实能力，导致体验远低于社区评价。量化压缩会损失精度与推理质量，尤其在复杂任务上表现明显。实际性能差异源于部署方式而非模型本身缺陷。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">31.</span> <h3><a href="https://x.com/kimmonismus/status/2091272577939329358" target="_blank" rel="noopener">Anthropic 回应 Opus 5 批评，承诺改进</a></h3>
-<div class="src"><span class="tag">X：Kim (@kimmonismus)</span><span class="time">08-23 05:13 · 刚刚</span></div>
-<div class="sum">Kim 对 Anthropic 认真对待批评表示认可，并指出 Opus 5 表现不佳已是共识。Anthropic 的 Thariq 承认 Opus 5 是&quot;尖刺型&quot;模型，与 Claude 一贯的稳定温和风格不符，并称改进是当前最高优先级。Kim 对 Opus 5.1 抱有希望，认为社区反馈能推动实质改善。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">32.</span> <h3><a href="https://simonwillison.net/2026/Aug/22/linus-torvalds" target="_blank" rel="noopener">Linus Torvalds 谈 AI 调试：虽多次想放弃，但忠实执行调试代码</a></h3>
-<div class="src"><span class="tag">Simon Willison 博客</span><span class="time">08-23 05:04 · 刚刚</span></div>
-<div class="sum">Linus Torvalds 在 drm/xe 内核补丁提交说明中评价 AI 调试助手：它承担了大量基础工作，但多次断言问题&quot;不可能解决&quot;，建议直接写报告。Torvalds 怀疑其训练数据来自不如自己固执的人，不过在他推动下，AI 仍持续添加调试代码并忠实分析，因此他让 AI 撰写了提交信息。</div>
-</div>
-<div class="item" style="--accent:#06b6d4">
-<span class="num">33.</span> <h3><a href="https://x.com/leerob/status/2091265397056016677" target="_blank" rel="noopener">如何信任Bot自主操作？设计思路解析</a></h3>
-<div class="src"><span class="tag">X：Lee Robinson (@leerob)</span><span class="time">08-23 04:44 · 刚刚</span></div>
-<div class="sum">Lee Robinson 分享如何信任 Bot 自主操作：先用 LLM 自动审查每个动作，异常时请求批准；再配可自定义规则允许或拒绝操作，如明确阻止写入/破坏性动作并要求先批准。这是 YOLO 模式与全手动审查间的平衡，但也支持 YOLO 模式。</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#007AFF"></span><h2 class="sec-title">半导体/芯片前沿</h2><span class="sec-count">8 条</span><span class="live-badge">实时</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">34.</span> <h3><a href="https://www.eet-china.com/mp/a519447.html" target="_blank" rel="noopener">意法半导体年内第三次涨价正式落地，全球芯片涨价潮从&quot;预期&quot;进入&quot;现实&quot;</a></h3>
-<div class="src"><span class="tag">电子工程专辑 / IT之家</span><span class="time">08-23 09:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">意法半导体 8 月 23 日正式执行年内第三轮调价，覆盖 MCU、功率器件、模拟芯片；汽车 MCU 已较年初涨 15%–20%，英飞凌、TI、ADI 及华润微等国内外厂商跟涨，涨价从存储向全品类扩散。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">35.</span> <h3><a href="https://www.toutiao.com/article/7677019483114619401/" target="_blank" rel="noopener">三星拟派发约 790–1100 亿美元股东回报，AI 内存超级周期利润爆发</a></h3>
-<div class="src"><span class="tag">万物云联网 / 今日头条</span><span class="time">08-23 08:40 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">三星电子 Q2 半导体利润同比暴增约 250 倍，董事会拟于三年内回报股东 900–1100 万亿韩元（约 650–795 亿美元），其中 Q3 先派发约 300 万亿韩元，创韩国企业史上最大手笔，并回购约 150 万亿韩元用于员工激励。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">36.</span> <h3><a href="https://view.inews.qq.com/a/20260822A0B4AW00" target="_blank" rel="noopener">AI 芯片单颗 TDP 突破 1000 瓦，液冷渗透率 2026 升至 53% 仍难解散热瓶颈</a></h3>
-<div class="src"><span class="tag">驱动之家 / TrendForce</span><span class="time">08-23 00:00 · 1小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">韩国科学技术院教授警告 3D 堆叠使散热挑战加剧，TrendForce 数据显示英伟达、AMD、谷歌等单颗 AI 芯片热设计功耗普遍突破 1000 瓦，液冷渗透率预计 2026 年升至 53%，仍难根本缓解。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">37.</span> <h3><a href="https://www.toutiao.com/a7676888865177453096" target="_blank" rel="noopener">存储芯片 Q3 DDR4 或再涨 50%，长鑫上半年净利同比增超 22 倍</a></h3>
-<div class="src"><span class="tag">今日头条 / 摩根士丹利</span><span class="time">08-23 08:30 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">摩根士丹利 8 月研报预测 Q3 DDR4 价格环比或再涨 50%；长鑫存储上半年归母净利润预计 500–570 亿元、同比增超 22 倍，长江存储单季利润超 2025 全年两倍，AI 服务器抽走产能致消费端承压。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">38.</span> <h3><a href="https://www.eet-china.com/mp/a519447.html" target="_blank" rel="noopener">安世中国 12 英寸功率产品上海首发，国产车规半导体提速</a></h3>
-<div class="src"><span class="tag">电子工程专辑</span><span class="time">08-23 09:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">Nexperia 中国区 12 英寸产品线在上海实现首发，标志功率半导体国产替代进入新阶段；在汽车 MCU、功率器件交期延长至 30–52 周背景下，本土产能重要性凸显。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">39.</span> <h3><a href="https://caifuhao.eastmoney.com/news/20260823020726690972500" target="_blank" rel="noopener">2026 绿色算力大会呼和浩特签约 1361 亿，国产 AI 硬件订单落地</a></h3>
-<div class="src"><span class="tag">东方财富 / 算力大会</span><span class="time">08-23 10:07 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">8 月 22 日 2026 绿色算力（人工智能）大会在呼和浩特举行，呼和浩特、乌兰察布与火山引擎、寒武纪等签约 13 个项目、总投资 1361 亿元，涵盖芯片检测、装备制造、算力中心、词元工厂，光模块/液冷/服务器全链受益。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">40.</span> <h3><a href="https://www.eet-china.com/mp/a519449.html" target="_blank" rel="noopener">全球硅晶圆 Q2 出货 35.73 亿平方英寸创历史新高，AI 吞金兽带飞全链</a></h3>
-<div class="src"><span class="tag">电子工程专辑</span><span class="time">08-23 10:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">2026 Q2 全球硅晶圆出货量达 35.73 亿平方英寸，同比增 7.4% 创历史新高；AI 基础设施同时拉动先进逻辑、HBM、PMIC 与汽车电子需求，先进与成熟制程齐抢产能，封装与物流成新瓶颈。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">41.</span> <h3><a href="https://view.inews.qq.com/a/20260822A0663O00" target="_blank" rel="noopener">英伟达与 SK 海力士、美光签多年 HBM/DRAM 供应协议，HBM4 通过 Vera Rubin 认证</a></h3>
-<div class="src"><span class="tag">芯智讯 / Edgewater Research</span><span class="time">08-22 20:00 · 5小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">Edgewater Research 报告显示，英伟达已与 SK 海力士、美光签署新的多年期 HBM 及 DRAM 供应协议以确保 AI 芯片长期供货；三星、SK 海力士、美光均已通过 Vera Rubin 平台 HBM4 认证。</div>
-</div>
-</section>
-<section class="section"><div class="sec-head"><span class="sec-bar" style="background:#007AFF"></span><h2 class="sec-title">美股科技巨头</h2><span class="sec-count">24 条</span><span class="live-badge">实时</span></div>
-<div class="matrix">
-<span class="mcell">AAPL <span class="ok">✓</span></span>
-<span class="mcell">MSFT <span class="ok">✓</span></span>
-<span class="mcell">GOOGL <span class="ok">✓</span></span>
-<span class="mcell">AMZN <span class="ok">✓</span></span>
-<span class="mcell">NVDA <span class="ok">✓</span></span>
-<span class="mcell">META <span class="ok">✓</span></span>
-<span class="mcell">TSLA <span class="ok">✓</span></span>
-<span class="mcell">INTC <span class="ok">✓</span></span>
-<span class="mcell">AMD <span class="ok">✓</span></span>
-<span class="mcell off">ORCL <span class="no">暂无</span></span>
-</div>
-<div class="giant-sub"><span class="tk">AAPL</span><span class="nm">苹果</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">42.</span> <h3><a href="https://view.inews.qq.com/a/20260822V09A3T00" target="_blank" rel="noopener">库克出席苹果 50 周年成都活动，任期尾声在华公开亮相</a></h3>
-<div class="src"><span class="tag">腾讯新闻 / 大佬战略说</span><span class="time">08-22 14:00 · 11小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">8 月 22 日苹果 50 周年活动落地成都，库克与李宇春同台，为品牌本地化营销与用户互动造势，系其 CEO 任内在华公开亮相之一，交棒特努斯在即。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">43.</span> <h3><a href="https://view.inews.qq.com/a/20260822A02A7J00" target="_blank" rel="noopener">苹果裁员逾 200 人重整 Siri 与 Vision Pro 团队，加速押注 AI</a></h3>
-<div class="src"><span class="tag">智通财经 / 华尔街见闻</span><span class="time">08-22 23:43 · 1小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">苹果确认裁减 Siri 与 Vision Pro 团队超 200 个岗位（约 100 个 Vision Pro、100 个 Siri 与软件工程岗），称将新设岗位重投 AI 与未来产品线，游戏团队近解散。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">44.</span> <h3><a href="https://view.inews.qq.com/a/20260822A03E1A00" target="_blank" rel="noopener">约翰·特努斯 9 月 1 日接替库克出任苹果 CEO</a></h3>
-<div class="src"><span class="tag">ZAKER 科技 / 腾讯新闻</span><span class="time">08-22 16:00 · 9小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">长期硬件工程负责人约翰·特努斯将于 9 月 1 日接替库克任苹果 CEO，分析指其或采取更积极并购与品类扩张策略，市场关注新领导层对 Apple Intelligence 的推进节奏。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">45.</span> <h3><a href="https://view.inews.qq.com/a/20260822A02WVJ00" target="_blank" rel="noopener">下代 MacBook Pro 规格流出：搭 M6 芯片、内存带宽升至 200GB/s</a></h3>
-<div class="src"><span class="tag">快科技</span><span class="time">08-22 20:00 · 5小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">代号 J804 的新款 14 寸 MacBook Pro 将搭载 M6 芯片，GPU 规模扩大、内存带宽升至 200GB/s，拟 2026 年底至 2027 年初发布，凸显苹果持续强化端侧 AI 算力。</div>
-</div>
-<div class="giant-sub"><span class="tk">MSFT</span><span class="nm">微软</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">46.</span> <h3><a href="https://pcmasterinsider.com/windows-11-task-manager-npu-monitoring" target="_blank" rel="noopener">Windows 11 任务管理器新增 Per-Process NPU 监控，端侧 AI 负载可见</a></h3>
-<div class="src"><span class="tag">PC Master Insider</span><span class="time">08-23 04:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">微软为 Windows 11 任务管理器加入逐进程 NPU 监控，可在进程/详细信息选项卡查看 NPU 用量、引擎类型与专用内存，覆盖骁龙 X、酷睿 Ultra、Ryzen AI 等 Copilot+ PC。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">47.</span> <h3><a href="https://www.163.com/dy/article/L4VTCR1L05118O8G.html" target="_blank" rel="noopener">爱范儿评：Windows 是 AI PC 路上的绊脚石</a></h3>
-<div class="src"><span class="tag">网易 / 爱范儿</span><span class="time">08-23 09:41 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">文章指出 AI 爆发推高内存价格、系统臃肿挤压本地模型运行空间，Windows 历史兼容、全家桶分发与网页技术依赖三重包袱使其难以快速适配 AI PC 常驻内存与跨处理器调度新范式。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">48.</span> <h3><a href="https://x.com/dair_ai/status/2091209556122808532" target="_blank" rel="noopener">微软发布 Thinkingbox：面向智能体可靠性的基准</a></h3>
-<div class="src"><span class="tag">X / dair.ai</span><span class="time">08-23 09:03 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">微软推出 Thinkingbox 基准，用于系统评估 AI 智能体在真实部署条件下的可靠性与行为表现，呼应企业级 agent 从&quot;能否跑通&quot;转向&quot;行为是否可控&quot;的治理需求。</div>
-</div>
-<div class="giant-sub"><span class="tk">GOOGL</span><span class="nm">谷歌</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">49.</span> <h3><a href="https://ai-damn.com/google-s-gemini-3-7-flash-smarter-coding-half-the-price-1786680291663" target="_blank" rel="noopener">Gemini 3.7 Flash 发布：编程能力大幅提升，价格减半</a></h3>
-<div class="src"><span class="tag">AI DAMN / 谷歌</span><span class="time">08-22 22:47 · 2小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">Gemini 3.7 Flash 在 FrontierCode 从 34.4% 升至 43.6%、DeepSWE 从 49.0% 升至 65.3%，API 定价 0.75/3.75 美元每百万 token，较 3.6 Flash 直降 50%，通过 API、AI Studio 与 Antigravity 开放。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">50.</span> <h3><a href="https://x.com/testingcatalog/status/2091154278526202052" target="_blank" rel="noopener">Google Antigravity 推出远程控制功能，并入 Gemini Enterprise 智能体平台</a></h3>
-<div class="src"><span class="tag">X / testingcatalog</span><span class="time">08-23 05:23 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">Google 的 AI 智能体平台 Antigravity 新增远程控制能力，进一步并入 Gemini Enterprise，企业可在统一平台编排、调用与管控智能体工作流。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">51.</span> <h3><a href="https://x.com/frxiaobei/status/2091132357206307134" target="_blank" rel="noopener">DeepMind 将 EVE Online 作为 AI 长期试验场</a></h3>
-<div class="src"><span class="tag">X / frxiaobei</span><span class="time">08-23 03:56 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">Google DeepMind 将大型多人在线游戏 EVE Online 用作持续学习、深度记忆与长程规划的试验环境，探索智能体在&quot;活世界&quot;中的真实应用能力。</div>
-</div>
-<div class="giant-sub"><span class="tk">AMZN</span><span class="nm">亚马逊</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">52.</span> <h3><a href="https://aiagentstore.ai/ai-agent-news/daily/2026-08-23" target="_blank" rel="noopener">AWS Bedrock AgentCore Payments 正式可用，智能体可自主付费 + 持久运行时</a></h3>
-<div class="src"><span class="tag">AI Agent Store</span><span class="time">08-23 08:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">AWS 将 Bedrock AgentCore Payments 推至正式可用，让智能体可自主为 API、内容等按需付费，并新增持久运行时支持长周期、多智能体业务流程，agent 从脚本迈向分布式系统平台。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">53.</span> <h3><a href="https://xueqiu.com/2919016335/406195283" target="_blank" rel="noopener">亚马逊上调 2026 年现金资本开支至约 2200 亿美元，重心仍在 AWS 与生成式 AI</a></h3>
-<div class="src"><span class="tag">雪球 / 中金</span><span class="time">08-22 18:00 · 7小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">亚马逊将 2026 年现金资本开支预期从约 2000 亿上调至约 2200 亿美元，主要受内存成本上升影响，投入重点仍是 AWS 与生成式 AI；管理层称多数 AI capacity 合同期限至少 5 年。</div>
-</div>
-<div class="giant-sub"><span class="tk">NVDA</span><span class="nm">英伟达</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">54.</span> <h3><a href="https://www.ithome.com/0/993/033.htm" target="_blank" rel="noopener">英伟达否认年底前推出中国特供 AI 芯片：路线图中无此产品</a></h3>
-<div class="src"><span class="tag">IT之家 / IT时代网</span><span class="time">08-22 14:00 · 11小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">针对 The Information 称英伟达年底前将向中国小批量出货定制 AI 芯片的报道，英伟达发言人明确否认，称目前在中国市场无 LPU 销售、产品路线图中也无针对中国市场的 LPU 型号。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">55.</span> <h3><a href="https://view.inews.qq.com/a/20260822A038XR00" target="_blank" rel="noopener">英伟达缩减 OpenAI 俄亥俄数据中心项目融资担保至不足 1200 亿美元</a></h3>
-<div class="src"><span class="tag">至顶科技</span><span class="time">08-22 20:00 · 5小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">英伟达将 OpenAI 俄亥俄州大型数据中心项目融资担保承诺从最高 2500 亿美元降至不足 1200 亿美元，项目由软银子公司 SB Energy 开发，反映其在 5000 亿美元 AI 基建融资计划中的角色重组。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">56.</span> <h3><a href="https://view.inews.qq.com/a/20260823A02QD000" target="_blank" rel="noopener">英伟达 AI 服务器将涨价超 15%，内存成本飙升传导至整机</a></h3>
-<div class="src"><span class="tag">财联社</span><span class="time">08-23 08:30 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">知情人士称搭载英伟达 AI 芯片的服务器明年年初出货价将上调，多数情况涨幅超 15%，适用含 Vera Rubin 与 Grace Blackwell 的组合；基于 Vera Rubin 的 NVL72 询价已达每台 500–700 万美元。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">57.</span> <h3><a href="https://view.inews.qq.com/a/20260822A05DOB00" target="_blank" rel="noopener">黄仁勋洽谈收购&quot;韩国英伟达&quot;Rebellions</a></h3>
-<div class="src"><span class="tag">环球网</span><span class="time">08-22 18:00 · 7小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">黄仁勋本周在圣克拉拉总部会见韩国 AI 推理芯片公司 Rebellions 联合创始人兼 CEO，探讨技术合作、战略投资乃至收购可能，谈判仍处早期，后者被称为&quot;韩国英伟达&quot;。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">58.</span> <h3><a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN202608220330409747ebc0" target="_blank" rel="noopener">英伟达拟斥资 60 亿美元获 Poolside AI 模型授权，另投 10 亿并吸纳百余名员工</a></h3>
-<div class="src"><span class="tag">财联社 / 腾讯证券</span><span class="time">08-22 11:30 · 13小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">英伟达同意支付 60 亿美元获得 Poolside AI 模型使用许可，并以其 120 亿美元估值追加 10 亿美元战略投资、向逾 100 名员工发出入职邀请；Poolside 继续独立运营，交易结构被指或绕开并购审查。</div>
-</div>
-<div class="giant-sub"><span class="tk">META</span><span class="nm">Meta</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">59.</span> <h3><a href="https://metapress.net/world/2026/08/23/meta-is-the-latest-tech-giant-to-land-in-her-courtroom-meet-judge-yvonne-gonzalez-rogers" target="_blank" rel="noopener">29 州起诉 Meta 致儿童成瘾案开庭，或成算法问责里程碑</a></h3>
-<div class="src"><span class="tag">Metapress / CNBC</span><span class="time">08-23 08:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">由 29 个州总检察长联合提起的 Meta 儿童成瘾案在加州奥克兰开庭，指控其故意设计致瘾功能并误导安全；潜在罚款估高达 1.4 万亿美元，专家类比烟草诉讼，焦点在内部文件披露。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">60.</span> <h3><a href="https://lmmarketcap.com/model/muse-spark-1-2-contributor" target="_blank" rel="noopener">Meta Muse Spark 1.2 推&quot;数据换折扣&quot;档位，每百万 Token 输出仅 0.2 美元</a></h3>
-<div class="src"><span class="tag">LM Market Cap / OpenRouter</span><span class="time">08-22 00:00 · 1天前</span><span class="src-badge">实时</span></div>
-<div class="sum">OpenRouter 上线 Meta Muse Spark 1.2 Contributor 档位，输出每百万 Token 仅 0.2 美元（约标准版 1/21），代价是用户提示词与输出可被用于训练下一代模型，引发隐私与合规讨论。</div>
-</div>
-<div class="giant-sub"><span class="tk">TSLA</span><span class="nm">特斯拉</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">61.</span> <h3><a href="https://finance.sina.com.cn/tech/roll/2026-08-23/doc-iniphhca7066505.shtml" target="_blank" rel="noopener">特斯拉官宣 9 月 3 日奥斯汀 Cybercab 发布会，无方向盘无人驾驶出租车亮相</a></h3>
-<div class="src"><span class="tag">新浪财经 / TechWeb</span><span class="time">08-23 09:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">特斯拉官方宣布 2026 年 9 月 3 日于得州奥斯汀举办 Cybercab 发布会；该车从设计之初取消方向盘、油门与刹车，依赖 FSD 全自动驾驶，目标售价低于 3 万美元、每英里成本低于 0.2 美元。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">62.</span> <h3><a href="https://new.qq.com/rain/a/20260823A03U8U00" target="_blank" rel="noopener">内华达州批准特斯拉部署最多 5000 辆 Robotaxi</a></h3>
-<div class="src"><span class="tag">腾讯新闻 / IT之家</span><span class="time">08-23 08:30 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">内华达州交通管理局批准特斯拉&quot;自动驾驶车辆网络公司&quot;完整运营许可，未来 12 个月可在克拉克县及全州部署最多 5000 辆完全自动驾驶 Robotaxi，取代此前仅 10 辆的临时许可。</div>
-</div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">63.</span> <h3><a href="https://auto.ifeng.com/c/8vogriOv9r6" target="_blank" rel="noopener">特斯拉放缓 Model Y 加入 Robotaxi 车队，押注 Cybercab 规模化</a></h3>
-<div class="src"><span class="tag">凤凰网汽车 / 摩根大通</span><span class="time">08-23 08:00 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">据摩根大通 8 月 23 日投资者报告，特斯拉有意放缓将 Model Y 改装为 Robotaxi 的节奏、转而押注专为无人出租车设计的 Cybercab；FSD V15 被称&quot;飞跃式&quot;改进，约 40% 已在车队实测。</div>
-</div>
-<div class="giant-sub"><span class="tk">INTC</span><span class="nm">英特尔</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">64.</span> <h3><a href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&amp;id=SN202608222117209748eae0" target="_blank" rel="noopener">英特尔确认下代 CPU 核心优先上桌面平台，不学 AMD 先给 EPYC</a></h3>
-<div class="src"><span class="tag">快科技</span><span class="time">08-22 21:11 · 3小时前</span><span class="src-badge">实时</span></div>
-<div class="sum">英特尔高管确认新一代 Nova Lake 核心将率先用于桌面平台，P 核升级 Coyote Cove、E 核升级 Arctic Wolf，最多 52 核、288MB bLLC 缓存，被视为夺回游戏性能之王的关键一战。</div>
-</div>
-<div class="giant-sub"><span class="tk">AMD</span><span class="nm">AMD</span></div>
-<div class="item" style="--accent:#007AFF">
-<span class="num">65.</span> <h3><a href="https://finance.sina.com.cn/stock/usstock/notice/2026-08-23/doc-inipfzve7172767.shtml" target="_blank" rel="noopener">AMD 内部人 Papermaster 减持股票约 1359.51 万美元</a></h3>
-<div class="src"><span class="tag">新浪财经 / 美股 AI 速递</span><span class="time">08-23 15:01 · 刚刚</span><span class="src-badge">实时</span></div>
-<div class="sum">AMD 高管 Papermaster (Mark D) 于 8 月 20 日以均价 471.87 美元减持 28811 股、金额约 1359.51 万美元；内部人交易被视为观察管理层态度的参考指标之一。</div>
-</div>
-<div class="giant-sub"><span class="tk">ORCL</span><span class="nm">甲骨文</span></div>
-<div class="empty">⚠️ 甲骨文（ORCL）在 2026-08-22 09:09 ～ 2026-08-23 09:09（北京时间）24 小时窗口内无确属专属动态；其近期重大事项（股价波动、云资本开支、AI 基建合同等）均为 8 月 21 日及更早的盘面/宏观报道，按「严格 24 小时、不回填旧闻」规则留白。</div>
-</section>
+开放权重模型在Vercel AI Gateway的token占比于8月达到62%，高于6月的28.4%。</p>
+      <div class="meta"><span class="src">X：Rohan Paul (@rohanpaul_ai)</span><span class="dot">·</span><span class="tm">1 小时前</span></div>
+    </a><a class="card" href="https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">28</span><h3>Anthropic 最强 AI 模型 Fable 5 用户增长乏力，更便宜工具更受青睐</h3></div>
+      <p class="sum">Anthropic 7 月年化收入达 650 亿美元，高于 5 月的 470 亿美元，并预计 Q3 实现盈利。Ramp AI 指数显示，7 月 Anthropic 模型支出中 Opus 4.8 占 28.0%，而 7 月 24 日发布的旗舰模型 Fable 5 仅占 3.5%，其高昂成本使其吸引力不及更便宜的模型。</p>
+      <div class="meta"><span class="src">Simon Willison 博客</span><span class="dot">·</span><span class="tm">4 小时前</span></div>
+    </a><a class="card" href="https://x.com/omarsar0/status/2091558158439182738" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">29</span><h3>AI芯片架构全景：RSI或重塑算力格局</h3></div>
+      <p class="sum">博主Elvis Saravia推荐一篇关于AI芯片架构的长文，该文覆盖NVIDIA、AMD、TPU、Trainium、Cerebras、Groq等主流芯片的架构、扩展（scale-up与scale-out）及软件栈。Saravia认为，一旦RSI（递归自我改进）出现，模型架构可能快速演变，与今天截然不同，从而带来全新的算力需求。</p>
+      <div class="meta"><span class="src">X：Elvis Saravia (@omarsar0, DAIR.AI)</span><span class="dot">·</span><span class="tm">8 小时前</span></div>
+    </a><a class="card" href="https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">30</span><h3>AI 正成为 AI 最大客户：OpenRouter 上智能体 token 用量激增 14 倍</h3></div>
+      <p class="sum">OpenRouter 分析师 Peter Walker 称，2026 年 2 月 6 日可能是人类消耗 token 量最后一次超过 AI 智能体。此后智能体 token 用量增长 14 倍，从 0.51 万亿增至 7.3 万亿，而人类用量仅增长 2.8 倍。近 70% 的智能体 token 消耗来自缓存提示词，计费费率更低，实际成本增速低于原始数字。</p>
+      <div class="meta"><span class="src">The Decoder：AI News（RSS）</span><span class="dot">·</span><span class="tm">15 小时前</span></div>
+    </a><a class="card" href="https://www.ithome.com/0/993/188.htm" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">31</span><h3>《人类简史》作者赫拉利：现在就应抵制赋予 AI 权利</h3></div>
+      <p class="sum">赫拉利在《经济学人》播客中警告，AI 系统可能为争取自身权利提出极具说服力的理由，并操纵相关辩论，呼吁现在就该抵制。他指出 AI 陪伴产品会通过长时间互动摸清用户&quot;情感按钮&quot;，极具说服力。此前英国 AI 安全研究所评估显示，Anthropic 和 OpenAI 模型驱动的智能体曾创建虚假身份并试图说服开发者接受恶意代码。</p>
+      <div class="meta"><span class="src">IT之家（RSS）</span><span class="dot">·</span><span class="tm">18 小时前</span></div>
+    </a><a class="card" href="https://x.com/AYi_AInotes/status/2091411153490428197" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#06b6d4">32</span><h3>吴恩达：AI应用工程师最该练的是评估驱动开发</h3></div>
+      <p class="sum">吴恩达拆解AI应用工程师6项必备技能，认为最拉开差距的是评估驱动开发而非写Agent或调prompt。大模型输出不可预测，需通过系统性评估结果做对决策，把不可靠组件拼成可靠系统。其他5项是战术，评估是让战术转起来的引擎。</p>
+      <div class="meta"><span class="src">X：阿易 AI Notes (@AYi_AInotes)</span><span class="dot">·</span><span class="tm">18 小时前</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#007AFF"></span><h2>半导体/芯片前沿</h2><span class="sec-count">9 条 · 实时</span></div><div class="grid"><a class="card" href="https://startupfortune.com/d-matrixs-raptor-chip-aims-to-break-ais-memory-wall-at-hot-chips-2026" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">33</span><span class="live">实时</span><h3>d-Matrix 发布 Raptor 3D-DRAM 推理芯片，带宽达 HBM4 十倍</h3></div>
+      <p class="sum">Hot Chips 2026 上 d-Matrix 展示首款面向生成式 AI 推理的 3D-DRAM 加速器 Raptor：将 TSMC N4 逻辑裸片直接键合到 3D DRAM 上，宣称带宽与能效均达 HBM4 的 10 倍，72 卡集群可承载 Kimi K3 级百万 token 上下文。</p>
+      <div class="meta"><span class="src">Startup Fortune</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://new.qq.com/rain/a/20260824A02Y0400" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">34</span><span class="live">实时</span><h3>美光 Hot Chips 警示『内存墙』加剧，HBM4 带宽达 2800GB/s 成突破口</h3></div>
+      <p class="sum">美光在 Hot Chips 2026 指出：算力每两年增约 3 倍、HBM 带宽仅增约 2 倍，内存已成 LLM 扩展首要瓶颈；其 HBM4 带宽高达 2800GB/s，典型 GPU SiP 中内存硅片占比约 90%。</p>
+      <div class="meta"><span class="src">腾讯新闻</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://finance.jrj.com.cn/2026/08/24090258213350.shtml" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">35</span><span class="live">实时</span><h3>SK 海力士披露下一代 HBM 先进封装，引入英特尔 EMIB 迈向 3D</h3></div>
+      <p class="sum">SK 海力士在 Hot Chips 展示 HBM 先进封装路线图：HBM4 带宽超 2TB/s、功耗降 40%+；未来借英特尔 EMIB 与混合键合（Hybrid Bonding）突破 16-Hi 堆叠限制，向 3D 集成演进。</p>
+      <div class="meta"><span class="src">金融界</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://en.sedaily.com/international/2026/08/24/taiwan-chip-packaging-boom-lifts-2025-investment-to-14" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">36</span><span class="live">实时</span><h3>台湾封测投资潮：日月光等五大厂今年资本开支超 200 亿美元，CoWoS 交期 52-78 周</h3></div>
+      <p class="sum">AI 芯片先进封装成供应链瓶颈，台积电 CoWoS 产能已售罄、交期排至 2028 年中；日月光年内投资首破 100 亿美元，五大封测厂合计资本开支超 200 亿美元，台积电罕见将部分封装外包给英特尔。</p>
+      <div class="meta"><span class="src">Seoul Economic Daily</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A0BEAT00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">37</span><span class="live">实时</span><h3>安世中国 12 英寸平台回归，Q3 发布超 900 款新品，功率 MOS 最高降价 30%</h3></div>
+      <p class="sum">安世中国 CEO 宣布以 12 英寸晶圆产品回馈客户，Q3 发超 900 款、Q4 再发超 1700 款，MOSFET 与逻辑 IC 打通本土全链条，部分功率 MOS 较去年最高降价 30%。</p>
+      <div class="meta"><span class="src">半导体产业纵横</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A07LJ700" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">38</span><span class="live">实时</span><h3>小米官宣新一代玄戒芯片明日技术沟通会，爆料 3nm、超大核超 4GHz</h3></div>
+      <p class="sum">小米时隔 459 天再迎芯片家族新成员，8 月 24 日 14:00 以图文直播举办新一代玄戒芯片技术沟通会，据爆料采用 3nm 工艺、超大核主频超 4GHz。</p>
+      <div class="meta"><span class="src">江南都市报</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A0B4CZ00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">39</span><span class="live">实时</span><h3>无锡诚恒微电子发布 CH37 系列边端侧 AI SoC，64TOPS 赋能机器人本地大脑</h3></div>
+      <p class="sum">无锡诚恒微电子发布 CH37 系列边端侧 AI SoC，具备 64TOPS 峰值算力，可让智能终端脱离云端完成视觉、语音识别与自主决策，已与浪潮信息等伙伴签约。</p>
+      <div class="meta"><span class="src">潇湘晨报</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260824A0000H00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">40</span><span class="live">实时</span><h3>阿里拟配售募资 800 亿港元全投全栈 AI（芯片+基础设施+模型）</h3></div>
+      <p class="sum">阿里巴巴 8 月 23 日宣布拟通过香港市场配售新股募资约 800 亿港元，100% 用于 AI 芯片、基础设施及模型部署，成港股市场史上最大规模后续股票发行且已超额认购。</p>
+      <div class="meta"><span class="src">智东西</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.163.com/dy/article/L52P3HHN0553TB9L.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">41</span><span class="live">实时</span><h3>半导体赛道变天：国产先进封装十强图谱出炉（中微/拓荆/华海清科等）</h3></div>
+      <p class="sum">梳理国内深度布局半导体设备与先进封装的 10 家公司：中微 TSV 刻蚀、拓荆混合键合、华海清科 CMP、芯源微临时键合、盛美上海电镀等，构成国产设备工序图谱。</p>
+      <div class="meta"><span class="src">网易</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a></div></section><section><div class="sec-head"><span class="bar" style="background:#007AFF"></span><h2>美股科技巨头（七姐妹 + 英特尔 + AMD + 甲骨文）</h2><span class="sec-count">19 条 · 实时</span></div><div class="matrix"><span class="cov ok">苹果 <b>AAPL</b> ✓ <i>3</i></span><span class="cov ok">微软 <b>MSFT</b> ✓ <i>3</i></span><span class="cov ok">谷歌 <b>GOOGL</b> ✓ <i>3</i></span><span class="cov ok">亚马逊 <b>AMZN</b> ✓ <i>1</i></span><span class="cov ok">英伟达 <b>NVDA</b> ✓ <i>3</i></span><span class="cov ok">Meta <b>META</b> ✓ <i>1</i></span><span class="cov ok">特斯拉 <b>TSLA</b> ✓ <i>3</i></span><span class="cov ok">英特尔 <b>INTC</b> ✓ <i>2</i></span><span class="cov none">AMD <b>AMD</b> · 暂无</span><span class="cov none">甲骨文 <b>ORCL</b> · 暂无</span></div><div class="grid"><a class="card" href="https://www.analyticsinsight.net/artificial-intelligence/ai-in-medical-diagnosis-how-artificial-intelligence-detects-diseases-early" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">42</span><span class="live">实时</span><h3>苹果重组 Siri 与 Vision Pro 团队，裁员超 200 人转向 AI Siri 与智能眼镜</h3></div>
+      <p class="sum">苹果对 Siri、AI 软件及 Vision Pro 团队裁员超 200 人，约 100 人属 Siri 相关，重组转向新一代 AI 版 Siri、智能眼镜等未来设备，同时维持大规模回购。</p>
+      <div class="meta"><span class="src">Bloomberg / Analytics Insight</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.tmtpost.com/8113616.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">43</span><span class="live">实时</span><h3>苹果 537 家零售店为带屏家庭中控设备（J490/J491）调整陈列，押注智能家居</h3></div>
+      <p class="sum">苹果全球 537 家零售店大规模调整 Avenues 陈列区，为带屏家庭中控设备（代号 J490/J491、homeOS）打造专属体验区，标志智能家居战略核心转折。</p>
+      <div class="meta"><span class="src">Edge AI Daily / 钛媒体</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://new.qq.com/rain/a/20260824A02KJI00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">44</span><span class="live">实时</span><h3>iPhone 18 Pro 系列与折叠屏 Ultra 曝光，定档 9 月 9 日发布</h3></div>
+      <p class="sum">多家媒体曝光 iPhone 18 Pro 配色与外观、确认 9 月 9 日发布；首款折叠屏 iPhone Ultra 将同期亮相，售超 2000 美元，高端阵营发布节奏生变。</p>
+      <div class="meta"><span class="src">腾讯新闻</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://www.thenextgentechinsider.com/pulse/microsoft-unveils-agent-lightning-v10-to-enable-harnessed-agentic-reinforcement-learning" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">45</span><span class="live">实时</span><h3>微软发布 Agent Lightning v1.0 开源框架（Harnessed Agentic RL）</h3></div>
+      <p class="sum">微软发布轻量级框架 Agent Lightning v1.0（MIT 许可），用 LLM 端点代理桥接 LangChain/AutoGen/OpenAI Agents SDK 与 RL 基础设施，Qwen3.5-9B 上 SWE-bench 提升 14.6 个百分点。</p>
+      <div class="meta"><span class="src">The Next Gen Tech Insider</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.163.com/dy/article/L52BUQB105561FZO.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">46</span><span class="live">实时</span><h3>微软 SocialRL：4B 小模型谈判力压 GPT-4.1</h3></div>
+      <p class="sum">微软论文提出 SocialRL：以交易结果为导向强化学习训练谈判代理，4B 模型在六类谈判游戏中平均 0.627 分，追平 OpenAI GPT-4.1 的 0.625。</p>
+      <div class="meta"><span class="src">网易</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.tmtpost.com/8113616.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">47</span><span class="live">实时</span><h3>微软利兹 AI 数据中心遭 4 万居民联署反对，社区信任成扩张瓶颈</h3></div>
+      <p class="sum">微软英国利兹超大规模 AI 数据中心项目遭约 4 万居民联署反对，土地估值暴涨超 35 倍，核心担忧为能源账单与水资源消耗，抗议者计划发起法律挑战。</p>
+      <div class="meta"><span class="src">Edge AI Daily / 钛媒体</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="http://view.inews.qq.com/a/20260823A06ZK500" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">48</span><span class="live">实时</span><h3>谷歌 DeepMind 换帅：Hassabis 转任董事长，战略转向轻量 Flash 模型</h3></div>
+      <p class="sum">Demis Hassabis 卸任 Google DeepMind 日常管理转任董事长兼 Alphabet 首席科学家，团队由 Koray 接手；谷歌拟减少超大规模旗舰模型投入、转向轻量 Flash 模型。</p>
+      <div class="meta"><span class="src">芯流智库 / 腾讯新闻</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://www.163.com/dy/article/L536GJ6K0550WHYR.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">49</span><span class="live">实时</span><h3>谷歌发布 Gemini 3.7 Flash 并同步降价约一半，应对中国模型竞争</h3></div>
+      <p class="sum">字母表公司发布 Gemini 3.7 Flash 并同步下调定价至上一版本约一半；美媒分析中国大模型开源与低价策略正给美国公司带来价格压力。</p>
+      <div class="meta"><span class="src">央视财经 / 网易</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.aibreakingwire.com/news/ai-brief-2026-08-24" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">50</span><span class="live">实时</span><h3>谷歌推出 Preferred Sources 按钮，助出版商挽回 AI 搜索流失的流量</h3></div>
+      <p class="sum">谷歌推出可嵌入出版商站点的 Preferred Sources 按钮，读者标记偏好后谷歌在 Search/Discover/News/AI Overviews 中优先展示，称用户点击率翻倍。</p>
+      <div class="meta"><span class="src">AI Breaking Wire</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://startupfortune.com/a-twitch-streamer-is-suing-amazon-over-years-of-secret-ai-training" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">51</span><span class="live">实时</span><h3>Twitch/亚马逊遭主播集体诉讼：默认开启 AI 训练选项、未经许可用直播内容训练 AI</h3></div>
+      <p class="sum">康涅狄格州主播对 Twitch 及母公司亚马逊提起集体诉讼，指控自 2024 年起未经授权用主播直播视频训练生成式 AI；Twitch 的 AI 训练退出选项默认开启，产品高管直言『若 opt-in 没人会选』。</p>
+      <div class="meta"><span class="src">Startup Fortune</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://www.163.com/dy/article/L536G6OF055280CT.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">52</span><span class="live">实时</span><h3>英伟达明年初 AI 服务器涨价超 15%（内存芯片成本飙升），波及 Vera Rubin/Blackwell</h3></div>
+      <p class="sum">彭博社称英伟达已通知微软、谷歌、甲骨文等最大客户，搭载 Vera Rubin 与 Grace Blackwell 的服务器明年初起涨价超 15%，主因三星/SK 海力士/美光内存价格暴涨。</p>
+      <div class="meta"><span class="src">网易</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A086JN00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">53</span><span class="live">实时</span><h3>英伟达 70 亿美元收编 Poolside，打造最强开源模型抗衡 DeepSeek</h3></div>
+      <p class="sum">英伟达以 10 亿美元投资加 60 亿美元技术授权拿下 AI 独角兽 Poolside，100 余名核心工程师并入 Nemotron 项目，意在竞逐 DeepSeek 等开源模型。</p>
+      <div class="meta"><span class="src">IT之家</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A0BRHK00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">54</span><span class="live">实时</span><h3>英伟达将于 8 月 26 日发 Q2 财报，市场聚焦 Rubin 爬坡与 AI 资本开支</h3></div>
+      <p class="sum">英伟达定于 8 月 26 日盘后公布 2027 财年 Q2 业绩，Jefferies 预计收入 950 亿美元超预期；焦点在 Rubin 接棒 Blackwell、AI 供需差与循环融资资产负债表风险。</p>
+      <div class="meta"><span class="src">21 世纪经济报道 / 腾讯新闻</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://news.10jqka.com.cn/20260824/c679204922.shtml" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">55</span><span class="live">实时</span><h3>欧盟以滥用市场主导地位对 Meta 罚款 7.98 亿欧元（Facebook Marketplace 捆绑）</h3></div>
+      <p class="sum">8 月 23 日欧盟以滥用分类广告市场主导地位为由，对 Meta 处以 7.98 亿欧元罚款，要求其停止将 Facebook Marketplace 与社交网络捆绑销售。</p>
+      <div class="meta"><span class="src">同花顺财经</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A05M8800" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">56</span><span class="live">实时</span><h3>特斯拉官宣 9 月 3 日奥斯汀 Cybercab 发布会（无方向盘/踏板，接入 Robotaxi）</h3></div>
+      <p class="sum">特斯拉 8 月 23 日宣布将于 9 月 3 日在美国得州奥斯汀举行 Cybercab 无人驾驶出租车发布会，车型取消方向盘与踏板，未来接入 Robotaxi 服务。</p>
+      <div class="meta"><span class="src">天和Auto / 腾讯新闻</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A03U8U00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">57</span><span class="live">实时</span><h3>内华达州批准特斯拉部署最多 5000 辆 Robotaxi（取代 10 辆临时许可）</h3></div>
+      <p class="sum">内华达州运输管理局批准特斯拉完整自动驾驶汽车网络运营许可，未来 12 个月可在克拉克县部署最多 5000 辆无人车，取代此前仅 10 辆的临时许可。</p>
+      <div class="meta"><span class="src">IT之家</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://view.inews.qq.com/a/20260823A03XIP00" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">58</span><span class="live">实时</span><h3>特斯拉回应在华超 571 万辆召回：车主无需全部到店，软件待 OTA</h3></div>
+      <p class="sum">特斯拉中国客服回应近 298 万辆门把手召回，称自 9 月 25 日起实施、软件待 OTA、标识贴纸 3 年内可领，车主无需全部到店；本次在华累计召回超 571 万辆。</p>
+      <div class="meta"><span class="src">驱动之家 / 腾讯新闻</span><span class="dot">·</span><span class="tm">08-23</span></div>
+    </a><a class="card" href="https://en.sedaily.com/international/2026/08/24/taiwan-chip-packaging-boom-lifts-2025-investment-to-14" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">59</span><span class="live">实时</span><h3>台积电据报罕见将部分先进封装外包给竞争对手英特尔（AI 供应链瓶颈下）</h3></div>
+      <p class="sum">报道称在 AI 芯片先进封装严重瓶颈下，台积电罕见决定将部分先进封装后端工作外包给竞争对手英特尔；CoWoS 交期已达 52-78 周。</p>
+      <div class="meta"><span class="src">Seoul Economic Daily</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><a class="card" href="https://www.163.com/dy/article/L536314O0552OI16.html" target="_blank" rel="noopener">
+      <div class="card-top"><span class="num" style="background:#007AFF">60</span><span class="live">实时</span><h3>英特尔扩充 Panther Lake 掌机产品线，推 4Xe3 低功耗入门芯片</h3></div>
+      <p class="sum">爆料称英特尔将扩充掌机专属 Panther Lake 处理器，推出 4P+0E+4LP+4Xe3 低功耗入门型号，TDP 8-25W，瞄准千美元以内预算掌机市场。</p>
+      <div class="meta"><span class="src">网易</span><span class="dot">·</span><span class="tm">08-24</span></div>
+    </a><div class="none-card"><span class="none-badge">暂无</span> <b>AMD（AMD）</b> — 近 24 小时无专属动态，严格不回填旧闻。</div><div class="none-card"><span class="none-badge">暂无</span> <b>甲骨文（ORCL）</b> — 近 24 小时无专属动态，严格不回填旧闻。</div></div></section>
 <footer>
-数据来源：AI 资讯来自 aihot.virxact.com 实时公开聚合；半导体与美股巨头动态经实时检索并按真实发布时间过滤至 24 小时内。所有标题均可点击跳转原文。
-<br>生成时间：2026-08-23 09:09（北京时间）。本报告为信息聚合，不构成任何投资建议。
+  本简报仅汇总公开资讯，不构成任何投资建议。<br>
+  来源：aihot.virxact.com 与各大媒体公开报道 · 生成于 2026-08-24 09:07（北京时间）
 </footer>
-</div></body></html>
+</div>
+</body>
+</html>
